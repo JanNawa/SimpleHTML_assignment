@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Student Name: Nawaphan Chayopathum(Jan) -->
+<!-- Student Number: 991511341 -->
+
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/mainStyle.css"/>
+        <script type="text/javascript" src="script/indexScript.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header" onmouseover="mouseOverBgColor()">
+                <h1 id="name" onmouseover="mouseOverFontColor()">HTML Demo</h1>
+            </div>
+            <div id="navigation">
+                <ul id="navbar">
+                    <li class="navlist"><a class="active" href="index.html">Home</a></li>
+                    <li class="navlist"><a href="semContent/index.html">Semantic Example</a></li>
+                    <li class="navlist"><a href="canContent/index.html">Canvas Example</a></li>
+                </ul>   
+            </div>
+            <div id="main">
+                <h2 id="welcome">Welcome to My Website!</h2>
+                <p id="textPara" onclick="textChange()" ondblclick="textReappear()">
+                    This website is part of the assignment for Web Programming Course.<br>
+                    The course divided into 3 units which could divided into 2 parts.<br> 
+                    First part is client side scripting which focus on JavaScript.<br>
+                    Second part is server side scripting and database access using PHP and MySQL.
+                </p>
+                <p id="fontColorPara" onclick="fontColorChange()" ondblclick="fontColorReappear()">
+                    The marks divided into 2 main parts as indicated below: <br> 
+                    1. Exam included Midterm Exam(25%) and Final Exam(25%)<br>
+                    2. Assignments(40%) and Quizzes(10%)
+                </p>
+                
+            </div>
+            <div id="footer" onclick="greetUser()">
+                <h4 id="nameFooter">Created by: Jan (2019) | Contact: jannawaphan@gmail.com</h4>
+            </div>
+        </div>
+    </body>
+</html>

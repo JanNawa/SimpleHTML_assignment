@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Canvas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/CanStyle.css"/>
+        <link rel="stylesheet" href="style/ButtonStyle.css"/>
+        <script type="text/javascript" src="script/CanScript.js"></script>
+    </head>
+    <body onload="startCanvas();">
+        <div id="container">
+            <div id="header" onmouseover="mouseOverBgColor();">
+                <h1 id="name" onmouseover="mouseOverFontColor();">Canvas Demo</h1>
+            </div>
+            <div id="navigation">
+                <ul id="navbar">
+                    <li class="navlist"><a href="../index.html">Home</a></li>
+                    <li class="navlist"><a href="../semContent/index.html">Semantic Example</a></li>
+                    <li class="navlist"><a class="active" href="index.html">Canvas Example</a></li>
+                </ul>   
+            </div>
+            <div id="main">
+                <canvas id="myCanvas" width="900" height="200"></canvas>
+                <div>
+                    <button id="button1" onclick="createName();">B1 : Text</button>
+                    <button id="button2" onclick="createSquares();">B2 : Square</button>
+                    <button id="button3" onclick="createInitials();">B3 : Draw</button>
+                    <button id="button4" onclick="clearCanvas();">B4 : Clear</button>
+                </div>
+            </div>
+            <div id="footer">
+                <h4 id="nameFooter">Created by: Jan (2019) | Contact: jannawaphan@gmail.com</h4>
+            </div>
+        </div>
+    </body>
+</html>

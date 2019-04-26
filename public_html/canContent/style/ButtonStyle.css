@@ -1,0 +1,20 @@
+button{
+    border-radius: 50%;
+    margin: 20px;
+    padding: 20px;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+}
+#button1{
+    background-color: lightskyblue;
+}
+#button2{
+    background-color: darkcyan;
+}
+#button3{
+    background-color: aquamarine;
+}
+#button4{
+    background-color: darkturquoise;  
+}

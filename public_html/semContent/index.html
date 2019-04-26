@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Semantic</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/SemStyle.css"/>
+        <script type="text/javascript" src="script/SemScript.js"></script>
+    </head>
+    <body onload="startUp();">
+        <div id="container">
+            <header id="header">
+                <h1 id="name">Pet Farm</h1>
+            </header>
+            <nav id="navigation">
+                <ul id="navbar">
+                    <li class="navlist"><a href="../index.html">Home</a></li>
+                    <li class="navlist"><a class="active" href="index.html">Semantic Example</a></li>
+                    <li class="navlist"><a href="../canContent/index.html">Canvas Example</a></li>
+                </ul>   
+            </nav>
+            <main id="main">
+                <section>
+                    <img id="bulldog" src="images/bulldog.jpg" alt="Bulldog" height="150" onclick="selectImg('bulldog')"/>
+                    <h4 onclick="bulldogInfo()" ondblclick="originBulldog()" id="p1">Bulldog Puppy</h4>
+                </section>
+                <section>
+                    <img id="golden" src="images/golden.jpg" alt="Golden Retriever" height="150" onclick="selectImg('golden')"/>
+                    <h4 onclick="goldenInfo()" ondblclick="originGolden()" id="p2">Golden Retriever Puppy</h4>
+                </section>
+                <section>
+                    <img id="samoy" src="images/samoy.jpg" alt="Samoyed" height="150" onclick="selectImg('samoy')"/>
+                    <h4 onclick="samoyInfo()" ondblclick="originSamoy()" id="p3">Samoyed Puppy</h4>
+                </section>
+                <section>
+                    <img id="siberian" src="images/siberian.jpg" alt="Siberian Husky" height="150" onclick="selectImg('siberian')"/>
+                    <h4 onclick="siberianInfo()" ondblclick="originSiberian()" id="p4">Siberian Husky Puppy</h4>
+                </section>     
+            </main>
+            <footer id="footer" onclick="showOrder()">
+                <section>
+                    <h4 id="showOrder">Click to see your order here</h4>
+                </section>
+                <section onclick="changeOrder()">
+                    <h4>Change Order</h4>
+                    <img src="images/cart.png" alt="shopping cart" width="50">                    
+                </section>
+                <section>
+                    <button onclick="confirmOrder()">Confirm Order</button>
+                </section>
+                <section>
+                    <button onclick="cancelOrder()">Cancel Item</button>
+                </section>
+                <section>
+                    <button onclick="emptyOrder()">Empty Cart</button>
+                </section>               
+            </footer>
+        </div>
+    </body>
+</html>
